@@ -1,0 +1,43 @@
+<view class="box" style="background:{{background}}">
+	<view class="title" style="font-family:{{fontFamily}}">
+		{{chapter.title}}
+	</view>
+
+	<view class="body" bindtap="edit">
+		<view wx:for="{{arr}}" wx:key="index">
+			<view class="item" style="font-size: {{size}}rpx;font-family:{{fontFamily}}">{{item}}</view>
+		</view>
+	</view>
+
+	<view class="zhang">
+		<view class="top">上一章</view>
+		<view class="bottom">下一章</view>
+	</view>
+
+	<view wx:if="{{flag === true}}" class="Uzi">
+		<view class="background" wx:if="{{num === 1}}">
+			<view wx:for="{{color}}" wx:key="index">
+				<view style="background: {{item}};margin-right: 20rpx;" class="backg" bindtap="changeColor" data-color="{{item}}"></view>
+			</view>
+		</view>
+		<view class="background" wx:if="{{num === 2}}">
+			<view wx:for="{{family}}" wx:key="index">
+				<view style="margin-right: 20rpx;" bindtap="changeFamily" data-style="{{item.style}}">{{item.name}}</view>
+			</view>
+		</view>
+		<view class="see">
+			<view bindtap="catalog">查看目录</view>
+			<view bindtap="reduce">Aa-</view>
+			<view bindtap="add">Aa+</view>
+			<view bindtap="family">字体</view>
+			<view class="backg" bindtap="color" style="background:{{background}}"></view>
+		</view>
+	</view>
+	<view wx:if="{{num === 3}}">
+		<view class="catalog" style="background:{{background}}">
+			<view class="catalog-title">目录</view>
+			<view class="catalog-item">{{catalog}}</view>
+		</view>
+	</view>
+
+</view>

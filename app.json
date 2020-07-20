@@ -1,12 +1,43 @@
 {
-  "pages":[
-    "pages/index/index"
+  "pages": [
+    "pages/index/index",
+    "pages/bookCity/bookCity",
+    "pages/search/search",
+    "pages/help/help",
+    "pages/detail/detail",
+    "pages/read/read",
+    "pages/classification/classification",
+    "pages/ranking/ranking"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#cc1a38",
     "navigationBarTitleText": "小爱小说",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#cc1a38",
+    "list": [
+      {
+        "text": "书架",
+        "pagePath": "pages/index/index",
+        "iconPath": "image/book.png",
+        "selectedIconPath": "image/book-active.png"
+      },
+      {
+        "text": "书城",
+        "pagePath": "pages/bookCity/bookCity",
+        "iconPath": "image/bookcity.png",
+        "selectedIconPath": "image/bookcity-active.png"
+      },
+      {
+        "text": "搜索",
+        "pagePath": "pages/search/search",
+        "iconPath": "image/search.png",
+        "selectedIconPath": "image/search-active.png"
+      }
+    ]
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"

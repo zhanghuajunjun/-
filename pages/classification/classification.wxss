@@ -1,0 +1,94 @@
+.top {
+  display: flex;
+  align-items: center;
+  border-bottom: 1rpx solid #EEEEEE;
+}
+
+.content {
+  margin: 20rpx 20rpx;
+}
+
+.scroll-view_H {
+  white-space: nowrap;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  border-bottom: 1rpx solid #EEEEEE;
+}
+
+.data {
+  margin: 20rpx 20rpx;
+}
+
+.active {
+  color: #D81E06;
+}
+
+.item {
+  padding: 0 20rpx;
+}
+
+.price {
+  padding: 20rpx 0;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1rpx solid #EEEEEE;
+}
+
+.image {
+  width: 230rpx;
+  height: 316rpx;
+}
+
+.lower {
+  line-height: 54rpx;
+  width: 450rpx;
+}
+
+.title {
+  font-weight: 700;
+}
+
+.author {
+  font-size: 28rpx;
+  color: #B5B5B5;
+}
+
+.shortIntro {
+  display: -webkit-box;
+  overflow: hidden;
+  white-space: normal !important;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  color: #B5B5B5;
+  font-size: 28rpx;
+  height: 158.4rpx;
+}
+
+.tags {
+  display: flex;
+}
+
+.latelyFollower {
+  background: rgb(255,140,0);
+  margin-right: 20rpx;
+  font-size: 28rpx;
+  padding: 0 10rpx;
+  color: #fff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.red {
+  background: rgb(255,140,0) !important;
+}
+.blue {
+  background: rgb(0,206,209) !important;
+}
+.orange {
+  background: rgb(255,69,0) !important;
+}

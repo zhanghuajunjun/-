@@ -1,0 +1,19 @@
+.help{
+  font-size: 40rpx;
+  font-weight: 700;
+}
+.help1{
+  font-size: 36rpx;
+}
+.help2{
+  width: 100%;
+  border: 1rpx solid rgb(211, 210, 210);
+  margin-top: 20rpx;
+}
+.help3{
+  margin-top: 20rpx;
+}
+.help4{
+  font-size: 36rpx;
+  margin-top: 20rpx;
+}

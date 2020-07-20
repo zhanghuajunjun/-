@@ -1,0 +1,42 @@
+<view class="title">
+	<input type="text" value='{{value}}' placeholder="输入书名或作者名" class="ipt" bindconfirm="search" bindfocus="foucs" confirm-type="search"></input>
+	<image src="../../image/searchsss.png" class="img {{change==true?'img-active':''}}"></image>
+	<image src="../../image/dele.png" class="img-dele {{change==false?'imgdele-active':''}}" bindtap="clear"></image>
+</view>
+<view wx:if="{{value===''}}">
+	<view class="nav">
+		<view>大家都在搜</view>
+		<view class="refreshs" bindtap="refresh">
+			<image src="../../image/refreshs.png" class="image"></image>
+			<text class="refresh">换一换</text>
+		</view>
+	</view>
+	<view class="hot">
+		<view wx:for="{{hotWords}}" wx:key="index" class="hotwords">
+			<view class="hotitem" style="background: {{item.color}}" bindtap="detail" data-id="{{item.book}}">{{item.word}}</view>
+		</view>
+	</view>
+	<view class="nav">
+		<view>搜索历史</view>
+		<view class="refreshs" bindtap="delect">
+			<image src="../../image/del.png" class="image"></image>
+			<text class="refresh">清空</text>
+		</view>
+	</view>
+	<view class="hot" wx:if="{{num===1}}">
+		<view wx:for="{{searchHistory}}" wx:key="index" class="hotwords">
+			<view class="hotitem" style="background: {{item.color}}" bindtap="value" data-title="{{item.title}}">{{item.title}}</view>
+		</view>
+	</view>
+</view>
+<view wx:else class="else">
+	<view wx:for="{{book}}" wx:key="index" class="bookitem" bindtap="detail" data-id="{{item._id}}">
+		<image src="{{item.cover}}" class="cover"></image>
+		<view class="detail">
+			<view class="booktitle">{{item.title}}</view>
+			<view class="author">{{item.author}}</view>
+			<view class="shortIntro">{{item.shortIntro}}</view>
+			<view class="latelyFollower">最近收藏：{{item.latelyFollower}}</view>
+		</view>
+	</view>
+</view>

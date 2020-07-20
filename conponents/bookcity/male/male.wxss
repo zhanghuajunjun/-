@@ -1,0 +1,28 @@
+.sex {
+  padding: 30rpx;
+  border-bottom: 2rpx solid #ccc;
+  color: #ccc;
+  font-size: 34rpx;
+}
+.name {
+  font-size: 34rpx;
+}
+.count {
+  font-size: 28rpx;
+  color: #ccc;
+  margin-top: 12rpx;
+}
+.item {
+  width: 248.8rpx;
+  padding: 16rpx 0;
+  text-align: center;
+  border-bottom: 2rpx solid #ccc;
+}
+.border {
+  border-left: 2rpx solid #ccc;
+  border-right: 2rpx solid #ccc;
+}
+.all {
+  flex-wrap: wrap;
+  display: flex;
+}

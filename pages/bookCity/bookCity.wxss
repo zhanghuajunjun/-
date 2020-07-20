@@ -1,0 +1,36 @@
+.title {
+  width: 100%;
+  display: flex;
+  border-bottom: 2rpx solid #ccc;
+  padding: 20rpx 0 0 0;
+  background: #f0f0f0;
+  position: fixed;
+}
+
+.code {
+  height: 83.6rpx;
+}
+
+.title-item {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.xian {
+  width: 70rpx;
+  height: 6rpx;
+  background: #cc1a38;
+  margin-top: 16rpx;
+  visibility: hidden;
+}
+
+.active {
+  color: #cc1a38;
+}
+
+.active-paly {
+  visibility: visible;
+}

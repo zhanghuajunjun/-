@@ -1,0 +1,282 @@
+.box {
+  background: rgb(247, 247, 247);
+  height: 1207rpx;
+  width: 100%;
+}
+
+.img {
+  width: 270rpx;
+  height: 400rpx;
+  box-shadow: 0rpx 10rpx 50rpx 10rpx rgba(85, 85, 85, 0.10);
+}
+
+.nav {
+  background: #cc1a38;
+  width: 100%;
+  height: 120rpx;
+}
+
+.code {
+  height: 280rpx;
+  width: 100%;
+  background: white;
+}
+
+.title {
+  background: white;
+  font-size: 36rpx;
+  font-weight: 600;
+  padding: 20rpx 0;
+  text-align: center;
+}
+
+.author {
+  background: white;
+  font-size: 30rpx;
+  color: #999;
+  text-align: center;
+  padding-bottom: 10rpx;
+}
+
+.operation {
+
+  position: relative;
+}
+
+.xian {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 40.8rpx;
+  border-bottom: 1rpx solid #eee;
+  background: #fff;
+}
+
+.read {
+  padding: 20rpx 60rpx;
+  border-radius: 40rpx;
+  border: 1rpx solid #eee;
+  background: #cc1a38;
+  color: #fff;
+  z-index: 66;
+}
+
+.add {
+  padding: 20rpx 60rpx;
+  border-radius: 40rpx;
+  border: 1rpx solid #eee;
+  background: #eee;
+  z-index: 66;
+}
+
+.refs {
+  width: 130rpx;
+}
+
+.lastChapter {
+  width: 500rpx;
+  color: rgb(64, 224, 210);
+  font-size: 28rpx;
+  font-weight: 400;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.lalala {
+  display: flex;
+  justify-content: center;
+  margin: 0 40rpx 40rpx;
+}
+
+.rate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10rpx;
+  margin-top: 40rpx;
+}
+
+.details {
+  background: rgb(247, 247, 247);
+}
+
+.xp {
+  margin: 0 40rpx;
+  background: white;
+  display: flex;
+  border-bottom: 1rpx solid #ccc;
+  padding: 20rpx 0 0 0;
+}
+
+.title-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.error {
+  width: 70rpx;
+  height: 6rpx;
+  background: #cc1a38;
+  margin-top: 16rpx;
+  visibility: hidden;
+}
+
+.err {
+  width: 140rpx;
+  height: 6rpx;
+  background: #cc1a38;
+  margin-top: 16rpx;
+  visibility: hidden;
+}
+
+.active {
+  color: #cc1a38;
+}
+
+.active-paly {
+  visibility: visible;
+}
+
+.introduction {
+  background: white;
+  margin: 0 40rpx;
+  padding: 30rpx;
+  font-size: 28rpx;
+}
+
+.chaptersCount {
+  font-size: 28rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(247, 247, 247);
+  padding: 10rpx 0;
+  border-radius: 16rpx;
+}
+
+.nav-img {
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 10rpx;
+}
+
+.aaaa {
+  background: white;
+  margin: 0 40rpx;
+  padding: 0 30rpx 30rpx 30rpx;
+}
+
+.refreshs {
+  display: flex;
+  align-items: center;
+}
+
+.image {
+  width: 50rpx;
+  height: 50rpx;
+  margin-right: 20rpx;
+}
+
+.refresh {
+  color: #ff6347;
+}
+
+.elsebook {
+  background: white;
+  margin: 0 40rpx;
+  padding: 20rpx 30rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+.elseimg {
+  width: 196rpx;
+  height: 320rpx;
+}
+
+.elsetitle {
+  text-align: center;
+  width: 196rpx;
+  font-size: 28rpx;
+  margin-top: 10rpx;
+}
+
+.evaluate {
+  background: white;
+  margin: 0 40rpx;
+  padding-top: 30rpx;
+}
+
+.evaluate-item {
+  padding: 30rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+.evaluate-img {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+
+.evaluate-name {
+  width: 490rpx;
+  font-size: 28rpx;
+  color: #ff6347;
+  margin-bottom: 10rpx;
+}
+
+.evaluate-content {
+  width: 490rpx;
+  font-size: 28rpx;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+}
+
+.downloadFile {
+  width: 100%;
+  background: rgba(0, 0, 0, .8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 88;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.downloadImg {
+  width: 80%;
+  height: 80%;
+}
+
+.downImg {
+  background: white;
+  padding: 30rpx;
+  width: 100%;
+  text-align: center;
+  border-bottom: 1rpx solid #ccc;
+}
+
+.close {
+  background: white;
+  padding: 30rpx;
+  width: 100%;
+  text-align: center;
+}
+
+.cao {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  z-index: 99;
+}

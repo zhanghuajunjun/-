@@ -1,0 +1,22 @@
+.male {
+  padding: 30rpx;
+  color: #ccc;
+  font-size: 34rpx;
+}
+.img {
+  width: 50rpx;
+  height: 50rpx;
+  margin-right: 20rpx;
+}
+.item {
+  display: flex;
+  align-items: center;
+  padding: 20rpx;
+  border-bottom: 2rpx solid #ccc;
+}
+.female {
+  padding: 30rpx;
+  color: #ccc;
+  font-size: 34rpx;
+  margin-top: 20rpx;
+}

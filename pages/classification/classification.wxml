@@ -1,0 +1,30 @@
+  <view class="top">
+  	<view class="content {{activeIndex === index ? 'active': ''}}" wx:for="{{typeList}}" wx:key="index" data-id="{{item.id}}" data-index="{{index}}" bindtap="clickType">
+  		{{item.name}}
+  	</view>
+  </view>
+  <scroll-view scroll-x class="scroll-view_H">
+  	<view class="list">
+  		<view class="data {{activeIndexs === index ? 'active': ''}}" wx:for="{{obj.mins}}" wx:key="index" data-index="{{index}}" bindtap="clickMins">
+  			{{item}}
+  		</view>
+  	</view>
+  </scroll-view>
+  <view class="item">
+  	<view class="price" wx:for="{{books}}" wx:key="index" data-id="{{item._id}}" bindtap="detail">
+  		<view>
+  			<image class="image" src="{{item.cover}}"></image>
+  		</view>
+  		<view class="lower">
+  			<view class="title">{{item.title}}</view>
+  			<view class="author">{{item.author}}</view>
+  			<view class="shortIntro">{{item.shortIntro}}</view>
+  			<view class="tags">
+  				<view wx:for="{{item.tags}}" wx:key="index1" wx:for-item="item1" wx:for-index="index1">
+  					<view 
+						class="latelyFollower {{index1 === 0 ? 'blue' : ''}} {{index1 === 1 ? 'red' : ''}} {{index1 === 2 ? 'orange' : ''}}">{{item1}}</view>
+  				</view>
+  			</view>
+  		</view>
+  	</view>
+  </view>

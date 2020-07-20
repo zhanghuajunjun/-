@@ -1,0 +1,14 @@
+<view class="male">男生</view>
+<view wx:for="{{maleRanking}}" wx:key="index" bindtap="ranking" data-item="{{item}}">
+  <view wx:if="{{item.collapse===false}}" class="item">
+    <image src="{{item.cover}}" class="img"></image>
+    <view>{{item.title}}</view>
+  </view>
+</view>
+<view class="female">女生</view>
+<view wx:for="{{femaleRanking}}" wx:key="index" bindtap="ranking" data-item="{{item}}">
+  <view wx:if="{{item.collapse===false}}" class="item">
+    <image src="{{item.cover}}" class="img"></image>
+    <view>{{item.title}}</view>
+  </view>
+</view>

@@ -1,0 +1,74 @@
+<view class="box">
+	<view class="flex-j-c nav">
+		<image src="{{detail.cover}}" class="img" bindtap="seeImg"></image>
+	</view>
+	<view class="code"></view>
+	<view class="title">{{detail.title}}</view>
+	<view class="author">{{detail.author}}</view>
+	<view class="operation">
+		<view class="flex-j-sa">
+			<view class="read" bindtap="read" data-id="{{detail._id}}" data-title="{{detail.title}}">开始阅读</view>
+			<view wx:if="{{addbook >= 0}}" class="add">已加入书架</view>
+			<view wx:else class="add" bindtap="bookshelf">加入书架</view>
+		</view>
+		<view class="xian"></view>
+	</view>
+	<view class="details">
+		<van-rate readonly value="{{detail.safelevel}}" color='red' bind:change="onChange" class="rate" />
+		<view class="lalala">
+			<text class="refs">更新至</text>
+			<text class="lastChapter">{{detail.lastChapter}}</text>
+		</view>
+		<view class="xp">
+			<view class="title-item {{flag===0 ? 'active' : ''}}" bindtap="classification">
+				<view>详情</view>
+				<view class="error {{flag===0 ? 'active-paly' : ''}}"> </view>
+			</view>
+			<view class="title-item {{flag===1 ? 'active' : ''}}" bindtap="Ranking">
+				<view>评价（{{detail.starRatingCount}}）</view>
+				<view class="err {{flag===1 ? 'active-paly' : ''}}"></view>
+			</view>
+		</view>
+		<view wx:if="{{flag===0}}">
+			<view class="introduction">
+				简介：{{detail.longIntro}}
+			</view>
+			<view class="aaaa">
+				<view class="chaptersCount">
+					<image src="../../image/nav.png" class="nav-img"></image>
+					<text>总目录（{{detail.chaptersCount}}章）</text>
+				</view>
+			</view>
+			<view class="elsebook">
+				<view>看过这本书的人还看过</view>
+				<view class="refreshs" bindtap="refresh">
+					<image src="../../image/refreshs.png" class="image"></image>
+					<text class="refresh">换一换</text>
+				</view>
+			</view>
+			<view class="elsebook">
+				<view wx:for="{{books}}" wx:key='index'>
+					<image src="{{item.cover}}" class="elseimg" bindtap="detail" data-id="{{item._id}}"></image>
+					<view class="elsetitle">{{item.title}}</view>
+				</view>
+			</view>
+		</view>
+		<view wx:if="{{flag===1}}" class="evaluate">
+			<view wx:for="{{docs}}" wx:key="index" class="evaluate-item">
+				<image src="{{item.author.avatar}}" class="evaluate-img"></image>
+				<view>
+					<view class="evaluate-name">{{item.author.nickname}}</view>
+					<view class="evaluate-content">{{item.content}}</view>
+				</view>
+
+			</view>
+		</view>
+	</view>
+</view>
+<view class="downloadFile" wx:if="{{num === 1}}">
+	<image src="{{detail.cover}}" class="downloadImg" bindlongtap="downFile"></image>
+	<view wx:if="{{flags === true}}" class="cao">
+		<view class="downImg" bindtap="downloadFile" data-url="{{detail.cover}}">保存图片</view>
+		<view class="close" bindtap="close">取消</view>
+	</view>
+</view>

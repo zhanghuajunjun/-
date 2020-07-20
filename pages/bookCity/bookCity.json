@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "male": "../../conponents/bookcity/male/male",
+    "female": "../../conponents/bookcity/female/female",
+    "press": "../../conponents/bookcity/press/press",
+    "ranking":"../../conponents/bookcity/Ranking/Ranking"
+  },
+  "navigationBarTitleText":"书城"
+}

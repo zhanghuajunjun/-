@@ -1,1 +1,23 @@
-
+<view class="flex-a-c flex-j-sb paddss">
+	<image src="../../image/edit.png" class="img" bindtap="edit"></image>
+	<view class="flex-a-c">
+		<text class="help" bindtap="help">帮助</text>
+		<image src="../../image/Refresh.png" class="img"></image>
+	</view>
+</view>
+<view wx:if="{{bookshelf.length < 1}}" class="nullbook">
+	主人还没有收藏书籍，快去书城收藏吧！
+</view>
+<view class="elsebook" wx:else>
+	<view wx:for="{{bookshelf}}" wx:key='index'>
+		<view class="item">
+			<image src="{{item.cover}}" class="elseimg" bindtap="read" data-id="{{item._id}}" data-title="{{item.title}}"></image>
+			<view class="elsetitle">{{item.title}}</view>
+			<image src="../../image/dele.png" 
+			class="img-dele" 
+			bindtap="delect" 
+			data-index="{{index}}"
+			wx:if="{{change===false}}"></image>
+		</view>
+	</view>
+</view>

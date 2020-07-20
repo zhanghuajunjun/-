@@ -1,0 +1,27 @@
+<view class="title">
+	<view class="title-item {{flag===0 ? 'active' : ''}}" bindtap="classification">
+		<view>分类</view>
+		<view class="xian {{flag===0 ? 'active-paly' : ''}}"></view>
+	</view>
+	<view class="title-item {{flag===1 ? 'active' : ''}}" bindtap="Ranking">
+		<view>排行</view>
+		<view class="xian {{flag===1 ? 'active-paly' : ''}}"></view>
+	</view>
+</view>
+<view class="code"></view>
+<view wx:if="{{flag===0}}">
+	<view>
+		<male male="{{male}}"></male>
+	</view>
+	<view>
+		<female female="{{female}}"></female>
+	</view>
+	<view>
+		<press press="{{press}}"></press>
+	</view>
+</view>
+<view wx:if="{{flag===1}}">
+	<view>
+		<ranking maleRanking="{{maleRanking}}" femaleRanking="{{femaleRanking}}" wx:if='{{maleRanking.length > 0}}'></ranking>
+	</view>
+</view>

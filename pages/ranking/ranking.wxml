@@ -1,0 +1,83 @@
+<view wx:if="{{totalRank!=='undefined'}}">
+	<view class="rangking">
+
+		<view class="city1 {{num===0?'active':''}}" bindtap="citys">
+			<view>周榜</view>
+			<view class="city2 {{num==0?'actives':''}}" bindtap="citys"></view>
+		</view>
+
+		<view class="city1 {{num===1?'active':''}}" bindtap="city">
+			<view>月榜</view>
+			<view class="city2 {{num==1?'actives':''}}" bindtap="city"></view>
+		</view>
+
+		<view class="city1 {{num===2?'active':''}}" bindtap="cityss">
+			<view>总榜</view>
+			<view class="city2 {{num==2?'actives':''}}" bindtap="cityss"></view>
+		</view>
+
+	</view>
+	<view class="code"></view>
+	<view wx:if="{{num==0}}">
+		<view class="item">
+			<view wx:for="{{book}}" wx:key="index" class="price" bindtap="detail" data-id="{{item._id}}">
+				<view>
+					<image class="image" src="{{item.cover}}"></image>
+				</view>
+				<view class="lower">
+					<view class="title">{{item.title}}</view>
+					<view class="author">{{item.author}}</view>
+					<view class="shortIntro">{{item.shortIntro}}</view>
+				</view>
+			</view>
+		</view>
+	</view>
+
+	<view wx:if="{{num==1}}">
+		<view class="item">
+			<view wx:for="{{book}}" wx:key="index" class="price" bindtap="detail" data-id="{{item._id}}">
+				<view>
+					<image src="{{item.cover}}" class="image"></image>
+				</view>
+				<view class="lower">
+					<view class="title">{{item.title}}</view>
+					<view class="author">{{item.author}}</view>
+					<view class="shortIntro">{{item.shortIntro}}</view>
+				</view>
+
+			</view>
+		</view>
+	</view>
+
+	<view wx:if="{{num==2}}">
+		<view class="item">
+			<view wx:for="{{book}}" wx:key="index" class="price" bindtap="detail" data-id="{{item._id}}">
+				<view>
+					<image src="{{item.cover}}" class="image"></image>
+				</view>
+				<view class="lower">
+					<view class="title">{{item.title}}</view>
+					<view class="author">{{item.author}}</view>
+					<view class="shortIntro">{{item.shortIntro}}</view>
+				</view>
+			</view>
+		</view>
+	</view>
+</view>
+
+<view wx:else>
+	<view wx:if="{{num==0}}">
+		<view class="item">
+			<view wx:for="{{book}}" wx:key="index" class="price" bindtap="detail" data-id="{{item._id}}">
+				<view>
+					<image src="{{item.cover}}" class="image"></image>
+				</view>
+				<view class="lower">
+					<view class="title">{{item.title}}</view>
+					<view class="author">{{item.author}}</view>
+					<view class="shortIntro">{{item.shortIntro}}</view>
+				</view>
+			</view>
+		</view>
+	</view>
+</view>

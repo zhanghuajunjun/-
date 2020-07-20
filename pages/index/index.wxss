@@ -1,0 +1,57 @@
+.help {
+  border: 2rpx solid #ccc;
+  border-radius: 20rpx;
+  padding: 10rpx 30rpx;
+  text-align: center;
+  width: 70rpx;
+  font-size: 32rpx;
+  color: #ccc;
+  margin-right: 20rpx;
+}
+
+.img {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.nullbook {
+  margin: 0 40rpx;
+  display: flex;
+  justify-content: center;
+}
+
+.elseimg {
+  width: 210rpx;
+  height: 320rpx;
+}
+
+.elsetitle {
+  text-align: center;
+  width: 196rpx;
+  font-size: 28rpx;
+  margin-top: 10rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.elsebook {
+  margin-left: 30rpx;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item {
+  margin-right: 30rpx;
+  margin-bottom: 30rpx;
+  position: relative;
+}
+
+.img-dele {
+  width: 40rpx;
+  height: 40rpx;
+  position: absolute;
+  top: -10rpx;
+  right: -10rpx;
+  z-index: 99999;
+}

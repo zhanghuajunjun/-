@@ -1,0 +1,80 @@
+
+.rangking {
+  width: 100%;
+  background: rgb(247, 247, 247);
+  justify-content: space-around;
+  display: flex;
+  padding: 20rpx 0 0 0;
+  position: fixed;
+}
+
+.code {
+  height: 83.6rpx;
+}
+
+.active {
+  color: red;
+}
+
+.city1 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.city2 {
+  width: 70rpx;
+  height: 6rpx;
+  background: #cc1a38;
+  margin-top: 16rpx;
+  visibility: hidden;
+}
+
+.actives {
+  visibility: visible;
+}
+
+.item {
+  padding: 0 20rpx;
+}
+
+.price {
+  padding: 20rpx 0;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1rpx solid #EEEEEE;
+}
+
+.image {
+  width: 230rpx;
+  height: 316rpx;
+}
+
+.lower {
+  line-height: 54rpx;
+  width: 450rpx;
+}
+
+.title {
+  font-weight: 700;
+}
+
+.author {
+  font-size: 28rpx;
+  color: #B5B5B5;
+}
+
+.shortIntro {
+  display: -webkit-box;
+  overflow: hidden;
+  white-space: normal !important;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  color: #B5B5B5;
+  font-size: 28rpx;
+  height: 158.4rpx;
+}
